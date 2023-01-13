@@ -1,15 +1,20 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import App from "./App";
-import Profile from "./Profile";
+import About from "./About";
+import Shop from "./Shop";
+import Nav from "./Nav";
+import "./style.css";
 
 const RouteSwitcher = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/profile" element={<Profile />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <Nav />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/profile" element={<Shop />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 };
 
