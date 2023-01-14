@@ -19,3 +19,8 @@ nav {
   width: 50%;
   list-style: none;
 }
+
+img {
+  max-width: 400px;
+  height: auto;
+}
